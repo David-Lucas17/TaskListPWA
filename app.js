@@ -86,8 +86,6 @@ document.querySelectorAll(".btn-filtro").forEach(botao => {
 renderizar();
 
 
-/* CANVAS */
-
 const canvas = document.getElementById("fundo-canvas");
 const ctx = canvas.getContext("2d");
 
