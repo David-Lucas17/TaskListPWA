@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <title>TaskList PWA</title>
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="fundo-canvas"></canvas>
+
+  <header class="cabecalho" id="cabecalho">
+    <h1>Task<span>List</span></h1>
+    <p>Organize suas tarefas com estilo</p>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="formulario">
+      <input type="text" id="campo-tarefa" placeholder="Nova tarefa..." maxlength="80" />
+      <button class="btn-adicionar" id="btn-adicionar">+ Adicionar</button>
+    </div>
+
+    <div class="filtros">
+      <button class="btn-filtro ativo" data-filtro="todas">Todas</button>
+      <button class="btn-filtro" data-filtro="pendentes">Pendentes</button>
+      <button class="btn-filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <div class="contador" id="contador"></div>
+
+    <ul id="lista-tarefas"></ul>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
